@@ -6,11 +6,11 @@ import os
 # -----------------------------
 # Load the trained model pipeline
 # -----------------------------
-if os.path.exists("Ridgemodel.pkl"):
-    with open("Ridgemodel.pkl", "rb") as f:
+if os.path.exists("RidgeModel.pkl"):
+    with open("RidgeModel.pkl", "rb") as f:
         model = pickle.load(f)
 else:
-    st.error("🚨 Model file 'Ridgemodel.pkl' not found! Please upload it to the app directory.")
+    st.error("🚨 Model file 'RidgeModel.pkl' not found! Please upload it to the app directory.")
     st.stop()
 
 
